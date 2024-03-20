@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;900&family=Source+Sans+3:wght@300;400;500;600&display=swap">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="Css/index.css">
 </head>
 <body>
     <header>
         <img src="Img/L-logo.png" alt="logo">
 
-        <i class="fi fi-ts-bars-sort" id="menu-icon"></i>
+        <i class="bx bx-menu-alt-right" id="menu-icon"></i>
 
         <nav>
             <a href="#home" class="active"><span class="nav-link">Home</span></a>
@@ -37,15 +37,39 @@
     <main>
         <section class="home" id="home">
             <div class="home-info">
-                <h3>Hi, this is me</h3>
-                <h1>Aura Velez</h1>
-                <h3>And I'm a <span class="title-span">Computer Engineer</span></h3>
+                <h3 class="title">Hi, this is me</h3>
+                <h1 class="bigtitle">Aura Velez</h1>
+                <h3 class="title">And I'm a <span class="title-span">Computer Engineer</span></h3>
             </div>
 
             <img src="Img/Home.png" alt="picture">
         </section>
 
         <section class="about" id="about">
+            <img src="Img/About.png" alt="picture">
+
+            <div class="about-info">
+                <div class="about-title">
+                    <h2 class="title">About <span class="title-span">Me</span></h2>
+                
+                </div>
+                
+                <h3 class="subtitle">Computer Engineer</h3>
+                
+                <p class="text">I am a ninth semester student, my passion for web programming is evident, but my curiosity and creativity in development takes me beyond the limits along with design. Curious and eager for knowledge, I am always ready for new challenges and learning.</p>
+                
+                <div class="social">
+                    <a href="#"><i class='bx bxl-gmail' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <button class="Btn">
+                        <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
+                        <span class="icon2"></span>
+                        <span class="tooltip">Resume</span>
+                    </button>
+                </div>
+            </div>
+
         </section>
 
         <div class="banner">
