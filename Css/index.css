@@ -1,11 +1,4 @@
 /*          --------------------          GENERAL PROVISIONS          --------------------          */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
 :root {
     --font-title: 'Alegreya', serif;
     --font-text: 'Source Sans 3', sans-serif;
@@ -23,5 +16,18 @@
     --dter-color: #E3D0FF;
     --ddetails-color: #D8A31A;
     --dtext-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: var(--font-text);
+}
+
+body { 
+    background: var(--lbg-color);
 }
 
