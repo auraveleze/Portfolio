@@ -1,0 +1,27 @@
+/*          --------------------          GENERAL PROVISIONS          --------------------          */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-title: 'Alegreya', serif;
+    --font-text: 'Source Sans 3', sans-serif;
+
+    --lbg-color: #F5F5F5;
+    --lpri-color: #395CAD;
+    --lsec-color: #748EE5;
+    --lter-color: #EAEFFF;
+    --ldetails-color: #D8A31A;
+    --ltext-color: #000000;
+
+    --dbg-color: #0A0A0A;
+    --dpri-color: #0072CE;
+    --dsec-color: #748EE5; /* #8DA5DA */
+    --dter-color: #E3D0FF;
+    --ddetails-color: #D8A31A;
+    --dtext-color: #ffffff;
+}
+
