@@ -79,6 +79,10 @@ header {
     height: 4.5rem;
     border-bottom: .1rem solid rgba(0, 0, 0, 0.123);
     padding: 2.3rem 0;
+
+    background: var()rgba(245, 245, 245, 0.6509803921568628);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 header img {
@@ -92,7 +96,7 @@ nav a {
 }
 
 nav a.active,
-nav a:hover {
+nav .nav-link:hover {
     color: var(--ldetails-color);
 }
 
@@ -250,7 +254,9 @@ input:checked + .slider:before {
   position: absolute;
   right: -85px;
   opacity: 0;
-  background-color: rgb(12, 12, 12);
+  background: rgba(10, 10, 10, 0.92);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -267,7 +273,11 @@ input:checked + .slider:before {
   content: "";
   width: 10px;
   height: 10px;
-  background-color: rgb(12, 12, 12);
+
+  background: rgba(10, 10, 10, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
   background-size: 1000%;
   background-position: center;
   transform: rotate(45deg);
@@ -372,7 +382,6 @@ input:checked + .slider:before {
     background: var(--lter-color);
     color: var(--ltext-color);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
     transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -404,10 +413,9 @@ input:checked + .slider:before {
     padding: 15px;
     margin: 10px;
     border-radius: 20px;
-    width: 60px;
-    height: 60px;
-    font-size: 35px;
-    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
     background: var(--lsec-color);
     color: var(--ltext-color);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -416,6 +424,7 @@ input:checked + .slider:before {
 
 .skill-box span { 
     font-size: 16px;
+    cursor: default;
 }
 
 .tooltip {
@@ -453,10 +462,13 @@ svg:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
   
-.skill-circle:hover,
+.skill-circle:hover {
+    background: var(--lsec-color);
+}
+
 .skill-circle:hover .tooltip,
 .skill-circle:hover .tooltip::before {
-    background: var(--lsec-color);
+    background: var(--dbg-color);
     color: #ffffff;
 }
 
