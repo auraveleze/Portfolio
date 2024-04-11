@@ -70,7 +70,7 @@ h1, h2, h3, h2 span, h3 span {
 }
 
 
-/*          --------------------          HEADER          --------------------          */
+/*          --------------------          HEADER - NAV          --------------------          */
 header {
     position: fixed;
     top: 0;
@@ -559,6 +559,7 @@ svg:hover .tooltip {
 /*          --------------------          FOOTER          --------------------          */
 footer {
     padding: 1.5rem 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer-info {
