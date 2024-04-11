@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;900&family=Source+Sans+3:wght@300;400;500;600&display=swap">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="Css/index.css">
+    <script src="Js/index.js"></script>
 </head>
 <body>
     <header>
@@ -42,11 +43,14 @@
                 <h3 class="title">And I'm a <span class="title-span">Computer Engineer</span></h3>
             </div>
 
-            <img src="Img/Home.png" alt="picture">
+            <img class="homeImg" src="Img/Home.png" alt="picture">
+
+            <img class="back-img cell" src="Img/Cell.png" alt="picture">
+            <img class="back-img headphones" src="Img/Headphones.png" alt="picture">
         </section>
 
         <section class="about" id="about">
-            <img src="Img/About.png" alt="picture">
+            <img class="aboutImg" src="Img/About.png" alt="picture">
 
             <div class="about-info">
                 <h2 class="title">About <span class="title-span">Me</span></h2>
@@ -56,9 +60,9 @@
                 <p class="text">I am a 9th semester student, my passion for web programming is evident, but my curiosity and creativity in development takes me beyond the limits along with design. Curious and eager for knowledge, I am always ready for new challenges and learning.</p>
                 
                 <div class="social">
-                    <a href="https://github.com/auraveleze"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/auraveleze/"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=auraveleze@gmail.com"><i class='bx bxl-gmail'></i></a>
+                    <a href="https://github.com/auraveleze" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/auraveleze/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=auraveleze@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
                     <button class="Btn">
                         <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
                         <span class="icon2"></span>
@@ -67,6 +71,8 @@
                 </div>
             </div>
 
+            <img class="back-img glasses" src="Img/Glasses.png" alt="picture">
+            <img class="back-img coffee" src="Img/Coffee.png" alt="picture">
         </section>
 
         <div class="banner">
@@ -77,50 +83,52 @@
             <h2 class="title">Tech <span class="title-span">Stack</span></h2>
 
             <div class="skill-content">
-                    <div class="skill soft">
-                        <h2 class="subtitle">Soft skills</h2>
-                        <div class="soft-box">
-                            <p class="text">Communication</p>
-                            <p class="text">Problem solving</p>
-                            <p class="text">Curiosity</p>
-                            <p class="text">Teamwork</p>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <h2 class="subtitle">Programming languages</h2>
-                        <div class="skill-box">
-                            <div class="skill-circle"><span class="tooltip">Java</span><i class='bx bxl-java'></i></div>
-                            <div class="skill-circle"><span class="tooltip">Python</span><i class='bx bxl-python'></i></div>
-                            <div class="skill-circle"><span class="tooltip">Javascript</span><i class='bx bxl-javascript'></i></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <h2 class="subtitle">Database</h2>
-                        <div class="skill-box">
-                            <div class="skill-circle"><span class="tooltip">PostgreSQL</span><i class='bx bxl-postgresql' ></i></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <h2 class="subtitle">Web development</h2>
-                        <div class="skill-box">
-                            <div class="skill-circle"><span class="tooltip">HTML</span><i class='bx bxl-html5'></i></div>
-                            <div class="skill-circle"><span class="tooltip">CSS</span><i class='bx bxl-css3' ></i></div>
-                            <div class="skill-circle"><span class="tooltip">Javascript</span><i class='bx bxl-javascript'></i></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill">
-                        <h2 class="subtitle">Tools</h2>
-                        <div class="skill-box">
-                            <div class="skill-circle"><span class="tooltip">Git</span><i class='bx bxl-git'></i></div>
-                            <div class="skill-circle"><span class="tooltip">GitHub</span><i class='bx bxl-github'></i></div>
-                        </div>
+                <div class="skill soft">
+                    <h2 class="subtitle">Soft skills</h2>
+                    <div class="soft-box">
+                        <p class="text">Communication</p>
+                        <p class="text">Problem solving</p>
+                        <p class="text">Curiosity</p>
+                        <p class="text">Teamwork</p>
                     </div>
                 </div>
+    
+                <div class="skill">
+                    <h2 class="subtitle">Programming languages</h2>
+                    <div class="skill-box">
+                        <div class="skill-circle"><span class="tooltip">Java</span><i class='bx bxl-java'></i></div>
+                        <div class="skill-circle"><span class="tooltip">Python</span><i class='bx bxl-python'></i></div>
+                        <div class="skill-circle"><span class="tooltip">Javascript</span><i class='bx bxl-javascript'></i></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h2 class="subtitle">Database</h2>
+                    <div class="skill-box">
+                        <div class="skill-circle"><span class="tooltip">PostgreSQL</span><i class='bx bxl-postgresql' ></i></div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <h2 class="subtitle">Web development</h2>
+                    <div class="skill-box">
+                        <div class="skill-circle"><span class="tooltip">HTML</span><i class='bx bxl-html5'></i></div>
+                        <div class="skill-circle"><span class="tooltip">CSS</span><i class='bx bxl-css3' ></i></div>
+                        <div class="skill-circle"><span class="tooltip">Javascript</span><i class='bx bxl-javascript'></i></div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <h2 class="subtitle">Tools</h2>
+                    <div class="skill-box">
+                        <div class="skill-circle"><span class="tooltip">Git</span><i class='bx bxl-git'></i></div>
+                        <div class="skill-circle"><span class="tooltip">GitHub</span><i class='bx bxl-github'></i></div>
+                    </div>
+                </div>
+            </div>
         
+            <img class="back-img pencil" src="Img/Pencil.png" alt="picture">
+            <img class="back-img agenda" src="Img/Agenda.png" alt="picture">
         </section>
 
         <section class="projects" id="projects">
@@ -128,60 +136,65 @@
             <p class="subtitle">From mind to reality: where imagination becomes creation.</p>
 
             <div class="projects-content">
-                    <div class="box">
-                        <img src="Img/Project1.jpg" alt="">
-                        <div class="box-info">
-                            <h4>Project 1</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
-                            <a href=""><i class='bx bx-window-open'></i>Read more</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="Img/Project2.jpg" alt="">
-                        <div class="box-info">
-                            <h4>Project 2</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
-                            <a href=""><i class='bx bx-window-open'></i>Read more</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="Img/Project3.jpg" alt="">
-                        <div class="box-info">
-                            <h4>Project 3</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
-                            <a href=""><i class='bx bx-window-open'></i>Read more</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="Img/Project4.jpg" alt="">
-                        <div class="box-info">
-                            <h4>Project 4</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
-                            <a href=""><i class='bx bx-window-open'></i>Read more</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="Img/Project5.jpg" alt="">
-                        <div class="box-info">
-                            <h4>Project 5</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
-                            <a href=""><i class='bx bx-window-open'></i>Read more</a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="Img/Project6.jpg" alt="">
-                        <div class="box-info">
-                            <h4>Project 6</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
-                            <a href=""><i class='bx bx-window-open'></i>Read more</a>
-                        </div>
+                <div class="box">
+                    <img src="Img/Project1.jpg" alt="">
+                    <div class="box-info">
+                        <h4>Project 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
+                        <a href=""><i class='bx bx-window-open'></i>Read more</a>
                     </div>
                 </div>
+
+                <div class="box">
+                    <img src="Img/Project2.jpg" alt="">
+                    <div class="box-info">
+                        <h4>Project 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
+                        <a href=""><i class='bx bx-window-open'></i>Read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                        <img src="Img/Project3.jpg" alt="">
+                    <div>
+                        div class="box-info">
+                        <h4>Project 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
+                        <a href=""><i class='bx bx-window-open'></i>Read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Img/Project4.jpg" alt="">
+                    <div class="box-info">
+                        <h4>Project 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
+                        <a href=""><i class='bx bx-window-open'></i>Read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Img/Project5.jpg" alt="">
+                    <div class="box-info">
+                        <h4>Project 5</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
+                        <a href=""><i class='bx bx-window-open'></i>Read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Img/Project6.jpg" alt="">
+                    <div class="box-info">
+                        <h4>Project 6</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis pulvinar lorem, at ultricies ligula.</p>
+                        <a href=""><i class='bx bx-window-open'></i>Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <img class="back-img notebook" src="Img/Notebook.png" alt="picture">
+            <img class="back-img wireless" src="Img/Wireless.png" alt="picture">
+            <img class="back-img keyboard" src="Img/" alt="picture">
         </section>
     </main>
 
@@ -190,10 +203,10 @@
             <img src="Img/L-logo.png" alt="logo">
             
             <div class="social">
-                <a href="https://github.com/auraveleze"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.linkedin.com/in/auraveleze/"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=auraveleze@gmail.com"><i class='bx bxl-gmail'></i></a>
-                <button class="Btn btn-up" type="button">
+                <a href="https://github.com/auraveleze" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/auraveleze/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=auraveleze@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                <button class="Btn" id="btn-up" type="button">
                     <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
                 </button>
             </div>
@@ -201,5 +214,7 @@
 
         <p> &copy; 2024 - Developed by Aura Velez </p>
     </footer>
+
+    
 </body>
 </html>
