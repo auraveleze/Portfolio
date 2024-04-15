@@ -14,29 +14,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;900&family=Source+Sans+3:wght@300;400;500;600&display=swap">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="Css/index.css">
-    <script src="Js/index.js"></script>
 </head>
 <body>
     <header>
-        <img src="Img/L-logo.png" alt="logo">
+        <img id="logo" src="Img/L-logo.png" alt="logo">
 
         <i class="bx bx-menu-alt-right" id="menu-icon"></i>
 
-        <nav>
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About me</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
+        <nav class="header-nav">
+            <a href="#home" class="nav-link ">Home</a>
+            <a href="#about" class="nav-link active">About me</a>
+            <a href="#skills" class="nav-link ">Skills</a>
+            <a href="#projects" class="nav-link ">Projects</a>
         </nav>
 
         <label class="switch">
-            <input type="checkbox">
+            <input id="themeSwitch" type="checkbox">
             <span class="slider"></span>
         </label>
     </header>
 
     <main>
-        <section class="home" id="home">
+        <section class="section home" id="home">
             <div class="home-info">
                 <h3 class="title">Hi, this is me</h3>
                 <h1 class="bigtitle">Aura Velez</h1>
@@ -45,11 +44,11 @@
 
             <img class="homeImg" src="Img/Home.png" alt="picture">
 
-            <img class="back-img cell" src="Img/Cell.png" alt="picture">
-            <img class="back-img headphones" src="Img/Headphones.png" alt="picture">
+            <img class="back-img cell dark-mode-hide" src="Img/Cell.png" alt="picture">
+            <img class="back-img headphones dark-mode-hide" src="Img/Headphones.png" alt="picture">
         </section>
 
-        <section class="about" id="about">
+        <section class="section about" id="about">
             <img class="aboutImg" src="Img/About.png" alt="picture">
 
             <div class="about-info">
@@ -71,15 +70,15 @@
                 </div>
             </div>
 
-            <img class="back-img glasses" src="Img/Glasses.png" alt="picture">
-            <img class="back-img coffee" src="Img/Coffee.png" alt="picture">
+            <img class="back-img glasses dark-mode-hide" src="Img/Glasses.png" alt="picture">
+            <img class="back-img coffee dark-mode-hide" src="Img/Coffee.png" alt="picture">
         </section>
 
         <div class="banner">
             <h3>Behind every line of code, beats the curiosity of a soul that finds in design the perfect canvas to express its creativity.</h3>
         </div>
 
-        <section class="skills" id="skills">
+        <section class="section skills" id="skills">
             <h2 class="title">Tech <span class="title-span">Stack</span></h2>
 
             <div class="skill-content">
@@ -127,11 +126,11 @@
                 </div>
             </div>
         
-            <img class="back-img pencil" src="Img/Pencil.png" alt="picture">
-            <img class="back-img agenda" src="Img/Agenda.png" alt="picture">
+            <img class="back-img pencil dark-mode-hide" src="Img/Pencil.png" alt="picture">
+            <img class="back-img agenda dark-mode-hide" src="Img/Agenda.png" alt="picture">
         </section>
 
-        <section class="projects" id="projects">
+        <section class="section projects" id="projects">
             <h2 class="title">Latest <span class="title-span">Project</span></h2>
             <p class="subtitle">From mind to reality: where imagination becomes creation.</p>
 
@@ -192,9 +191,9 @@
                 </div>
             </div>
 
-            <img class="back-img notebook" src="Img/Notebook.png" alt="picture">
-            <img class="back-img wireless" src="Img/Wireless.png" alt="picture">
-            <img class="back-img keyboard" src="Img/" alt="picture">
+            <img class="back-img notebook dark-mode-hide" src="Img/Notebook.png" alt="picture">
+            <img class="back-img wireless dark-mode-hide" src="Img/Wireless.png" alt="picture">
+            <img class="back-img keyboard dark-mode-hide" src="Img/" alt="picture">
         </section>
     </main>
 
@@ -215,6 +214,6 @@
         <p> &copy; 2024 - Developed by Aura Velez </p>
     </footer>
 
-    
+    <script src="Js/index.js"></script>
 </body>
 </html>

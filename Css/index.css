@@ -2,20 +2,6 @@
 :root {
     --font-title: 'Alegreya', serif;
     --font-text: 'Source Sans 3', sans-serif;
-
-    --lbg-color: #F5F5F5;
-    --lpri-color: #395CAD;
-    --lsec-color: #748EE5;
-    --lter-color: #EAEFFF;
-    --ldetails-color: #D8A31A;
-    --ltext-color: #000000;
-
-    --dbg-color: #0A0A0A;
-    --dpri-color: #0072CE;
-    --dsec-color: #748EE5; /* #8DA5DA */
-    --dter-color: #E3D0FF;
-    --ddetails-color: #D8A31A;
-    --dtext-color: #ffffff;
 }
 
 * {
@@ -27,11 +13,12 @@
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: var(--font-text);
-    color: var(--ltext-color);
+    color: var(--text-color);
 }
 
 body { 
-    background: var(--lbg-color);
+    background: var(--bg-color);
+    transition: .5s ease;
 }
 
 section {
@@ -41,7 +28,7 @@ section {
     overflow: hidden;
 }
 
-h1, h2, h3, h2 span, h3 span { 
+h1, h2, h3, h2 span, h3 span, nav a { 
     font-family: var(--font-title);
 }
 
@@ -57,8 +44,9 @@ h1, h2, h3, h2 span, h3 span {
 }
 
 .title-span { 
-    color: var(--lpri-color);
+    color: var(--sec-color);
     font-weight: 600;
+    transition: .3s ease;
 }
 
 .subtitle {
@@ -81,9 +69,10 @@ header {
     height: 4.5rem;
     padding: 2.3rem 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    background-color: rgba(var(--lbg-color), 0.8); 
+    background-color: rgba(var(--bg-color), 0.8); 
     backdrop-filter: blur(6px);
     z-index: 5; 
+    transition: .3s ease;
 }
 
 header img {
@@ -91,14 +80,17 @@ header img {
 }
 
 nav a {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    font-weight: 600;
     margin: 2rem;
-    transition: .3s;
+    transition: .5s ease;
 }
 
-nav a.active,
+nav .nav-link.active,
+nav .section.active,
 nav .nav-link:hover {
-    color: var(--ldetails-color);
+    color: var(--pri-color);
+    transition: .3s ease;
 }
 
 #menu-icon {
@@ -129,7 +121,7 @@ nav .nav-link:hover {
     bottom: 0;
     border-radius: 30px;
     background-color: #e5e2e2;
-    transition: .4s;
+    transition: .4s ease;
 }
 
 .slider:before {
@@ -142,7 +134,7 @@ nav .nav-link:hover {
     transform: translateY(-50%);
     content: "";
     background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
-    transition: .4s;
+    transition: .4s ease;
 }
 
 input:checked + .slider { 
@@ -210,7 +202,7 @@ input:checked + .slider:before {
     width: 3rem;
     height: 3rem;
     background: transparent;
-    border: .1rem solid var(--lpri-color);
+    border: .1rem solid var(--pri-color);
     font-size: 1.5rem;
     border-radius: 50%;
     margin: 3rem  1.5rem 3rem 0;
@@ -218,9 +210,10 @@ input:checked + .slider:before {
 }
 
 .social .bx:hover {
-    background: var(--lpri-color);
+    background: var(--pri-color);
     box-shadow: 0 0 .5rem;
-    color: var(--dtext-color);
+    color: var(--text-color);
+    transition: .3s ease;
 }
 
 .Btn {
@@ -228,7 +221,7 @@ input:checked + .slider:before {
   height: 3rem;
   border: none;
   border-radius: 50%;
-  background-color: var(--lpri-color);
+  background-color: var(--pri-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,6 +230,7 @@ input:checked + .slider:before {
   position: relative;
   transition-duration: .3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+  transition: .3s ease;
 }
 
 .svgIcon {
@@ -274,11 +268,9 @@ input:checked + .slider:before {
   content: "";
   width: 10px;
   height: 10px;
-
   background: rgba(10, 10, 10, 0.65);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-
   background-size: 1000%;
   background-position: center;
   transform: rotate(45deg);
@@ -292,7 +284,7 @@ input:checked + .slider:before {
 }
 
 .Btn:hover {
-  background-color: var(--lsec-color);
+  background-color: var(--sec-color);
   transition-duration: .3s;
 }
 
@@ -341,7 +333,8 @@ input:checked + .slider:before {
     display: flex;
     text-align: center;
     text-transform: uppercase;
-    color: var(--lbg-color);
+    color: var(--bg-color);
+    transition: .3s ease;
 } 
 
 
@@ -372,8 +365,8 @@ input:checked + .slider:before {
     padding: 0px 40px; 
     margin: 18px 20px; 
     border-radius: 20px;
-    background: var(--lter-color);
-    color: var(--ltext-color);
+    background: var(--ter-color);
+    color: var(--text-color);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -385,7 +378,8 @@ input:checked + .slider:before {
     align-items: center;
     width: 250px;
     gap: 0.6rem;
-    background: var(--lsec-color);
+    background: var(--sec-color);
+    transition: .3s ease;
 }
 
 .skill-box {
@@ -409,8 +403,8 @@ input:checked + .slider:before {
     width: 70px;
     height: 70px;
     font-size: 40px;
-    background: var(--lsec-color);
-    color: var(--ltext-color);
+    background: var(--sec-color);
+    color: var(--text-color);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -423,7 +417,7 @@ input:checked + .slider:before {
 .tooltip {
     position: absolute;
     top: 0;
-    color: var(--ltext-color);
+    color: var(--text-color);
     padding: 5px 8px;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -456,12 +450,13 @@ svg:hover .tooltip {
 }
   
 .skill-circle:hover {
-    background: var(--lsec-color);
+    background: var(--sec-color);
+    transition: .3s ease;
 }
 
 .skill-circle:hover .tooltip,
 .skill-circle:hover .tooltip::before {
-    background: var(--dbg-color);
+    background: var(--bg-color);
     color: #ffffff;
 }
 
@@ -477,7 +472,7 @@ svg:hover .tooltip {
 
 .projects .subtitle {
     font-size: 1.4rem;
-    margin: 0 0 .7rem; /* Arriba | Horizontal | Abajo */
+    margin: 0 0 .7rem;
 }
 
 .projects-content {
@@ -495,7 +490,7 @@ svg:hover .tooltip {
     width: 345px;
     height: 230px;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--dbg-color);
+    box-shadow: 0 0 1rem var(--bg-color);
 }
 
 .box img { 
@@ -506,6 +501,7 @@ svg:hover .tooltip {
 .box:hover img { 
     transform: scale(1.1);
 }
+
 .box .box-info {
     display: flex;
     flex-direction: column;
@@ -515,12 +511,11 @@ svg:hover .tooltip {
     position: absolute;
     height: 100%;
     padding: .2rem 0 .2rem;
-    color: var(--dtext-color);
+    color: var(--text-color);
     border-radius: 2rem;
     background: rgba(10, 10, 10, 0.32);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
-
     display: none;
     transition: .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
 }
@@ -531,13 +526,15 @@ svg:hover .tooltip {
 
 .box-info h4 { 
     font-size: 1.6rem;
-    color: var(--dtext-color);
+    color: var(--text-color);
+    transition: .3s ease;
 }
 
 .box-info p { 
     font-size: 1.1rem;
     padding: 1rem;
-    color: var(--dtext-color);
+    color: var(--text-color);
+    transition: .3s ease;
 }
 
 .box-info a {
@@ -546,7 +543,7 @@ svg:hover .tooltip {
     align-items: center;
     width: 8rem;
     height: 2rem;
-    color: var(--ltext-color);
+    color: var(--text-color);
     gap: 8px;
     background: rgba(234, 239, 255, 0.67);
     border-radius: 20px;
@@ -604,6 +601,7 @@ footer p {
 .back-img {
     position: absolute;
     z-index: -1;
+    transition: .5s ease;
 }
 
 .cell {
@@ -660,4 +658,8 @@ footer p {
     top: 70px;
     right: 0;
     transform: rotate(-20deg);
+}
+
+.hidden {
+    display: none;
 }
